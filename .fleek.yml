@@ -14,6 +14,9 @@ packages:
     - git
     - docker
     - ffmpeg
+    - vim
+    - curl
+    - gzip
 paths:
     - $HOME/bin
     - $HOME/.local/bin
@@ -25,4 +28,8 @@ systems:
       hostname: ANS-A588
       os: linux
       username: josssparkes
+    - arch: x86_64
+      hostname: ANS-A588
+      os: linux
+      username: denada
 unfree: true

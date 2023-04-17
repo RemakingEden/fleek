@@ -31,6 +31,22 @@
         ];
       };
       
+      "denada@ANS-A588" = home-manager.lib.homeManagerConfiguration {
+        pkgs = nixpkgs.legacyPackages.x86_64-linux; # Home-manager requires 'pkgs' instance
+        extraSpecialArgs = { inherit inputs; }; # Pass flake inputs to our config
+        modules = [ 
+          ./home.nix 
+          ./path.nix
+          ./shell.nix
+          ./user.nix
+          ./aliases.nix
+          ./programs.nix
+          # Host Specific configs
+          ./ANS-A588/ANS-A588.nix
+          ./ANS-A588/user.nix
+        ];
+      };
+      
     };
   };
 }

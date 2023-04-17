@@ -22,6 +22,9 @@
     pkgs.git
     pkgs.docker
     pkgs.ffmpeg
+    pkgs.vim
+    pkgs.curl
+    pkgs.gzip
     # Fleek Bling
     pkgs.git
     pkgs.htop
