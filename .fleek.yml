@@ -1,6 +1,6 @@
 aliases:
     fleeks: cd /home/josssparkes/.local/share/fleek
-bling: default
+bling: high
 ejected: false
 flakedir: .local/share/fleek
 git:
@@ -11,6 +11,9 @@ git:
 name: Fleek Configuration
 packages:
     - helix
+    - git
+    - docker
+    - ffmpeg
 paths:
     - $HOME/bin
     - $HOME/.local/bin

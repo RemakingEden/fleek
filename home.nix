@@ -4,6 +4,10 @@
     config = {
       # Disable if you don't want unfree packages
       
+      allowUnfree = true;
+      # Workaround for https://github.com/nix-community/home-manager/issues/2942
+      allowUnfreePredicate = (_: true);
+      
     };
   };
 
@@ -14,6 +18,10 @@
   # programs are installed and configuration applied to dotfiles
   home.packages = [
     # user selected packages
+    pkgs.helix
+    pkgs.git
+    pkgs.docker
+    pkgs.ffmpeg
     # Fleek Bling
     pkgs.git
     pkgs.htop
@@ -22,6 +30,13 @@
     pkgs.fzf
     pkgs.ripgrep
     pkgs.vscode
+    pkgs.lazygit
+    pkgs.jq
+    pkgs.yq
+    pkgs.neovim
+    pkgs.neofetch
+    pkgs.btop
+    pkgs.cheat
     (pkgs.nerdfonts.override { fonts = [ "FiraCode" ]; })
   ];
   fonts.fontconfig.enable = true; 
