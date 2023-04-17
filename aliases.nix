@@ -1,6 +1,6 @@
 { pkgs, misc, ... }: {
    home.shellAliases = {
-    fleeks = "cd /home/josssparkes/.local/share/fleek";
+    fleeks = "cd ~/.local/share/fleek";
     
     # bat --plain for unformatted cat
     catp = "bat -P";

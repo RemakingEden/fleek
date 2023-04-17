@@ -1,13 +1,13 @@
 aliases:
-    fleeks: cd /home/josssparkes/.local/share/fleek
+    fleeks: cd ~/.local/share/fleek
 bling: high
 ejected: false
 flakedir: .local/share/fleek
 git:
-    autocommit: false
-    autopull: false
-    autopush: false
-    enabled: false
+    autocommit: true
+    autopull: true
+    autopush: true
+    enabled: true
 name: Fleek Configuration
 packages:
     - helix
